@@ -44,6 +44,15 @@ class MyToolbarExt extends Autodesk.Viewing.Extension {
     const button = new Autodesk.Viewing.UI.Button('MyAwesomeButton');
     this.subToolbar.addControl(button);
 
+    const { viewer } = this;
+
+    // create panel
+    const panel = new MyAwesomePanel(viewer, 'awesomeExtensionPanel', 'My Awesome Extension');
+    viewer.addPanel(panel);
+
+    this.panel = panel;
+
+
     button.addClass('myAwesomeToolbarButton');
     button.icon.classList.add('glyphicon');
     button.setIcon('glyphicon-book');
@@ -53,12 +62,18 @@ class MyToolbarExt extends Autodesk.Viewing.Extension {
       const btnState = button.getState();
       if (btnState === Autodesk.Viewing.UI.Button.State.INACTIVE) {
         button.setState(Autodesk.Viewing.UI.Button.State.ACTIVE);
-        alert('MyAwesomeButton active');
+        panel.setVisible(true);
       } else if (btnState === Autodesk.Viewing.UI.Button.State.ACTIVE) {
         button.setState(Autodesk.Viewing.UI.Button.State.INACTIVE);
-        alert('MyAwesomeButton inactive');
+        panel.setVisible(false);
       }
     };
+
+    panel.addVisibilityListener((show) => {
+      if (show) return;
+
+      button.setState(Autodesk.Viewing.UI.Button.State.INACTIVE);
+    });
   }
 
   load() {
@@ -79,6 +94,13 @@ class MyToolbarExt extends Autodesk.Viewing.Extension {
 
   unload() {
     this.viewer.toolbar.removeControl(this.subToolbar);
+
+    this.panel.setVisible(false);
+    this.viewer.removePanel(this.panel);
+    this.panel.uninitialize();
+
+    delete this.panel;
+
 
     return true;
   }
