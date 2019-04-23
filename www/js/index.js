@@ -19,7 +19,6 @@
 //
 
 (() => {
-
   // Put your code here
 
   function fetchForgeToken(callback) {
@@ -62,9 +61,14 @@
       return;
     }
 
+    const config3d = {
+      extensions: ['Autodesk.ADN.Extension.Monitor.Selection'],
+    };
+
+
     // 初始化 Viewer 物件
     const viewerDiv = document.getElementById('viewer');
-    const viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
+    const viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv, config3d);
 
     // 載入 Viewer 物件
     const initialViewable = viewables[0];
@@ -77,7 +81,7 @@
     console.error(`onDocumentLoadFailure() - errorCode:${viewerErrorCode}`);
   }
 
-  const documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bGt3ZWo3eHBiZ3A2M3g0aGwzMzV5Nm0yNm9ha2dnb2YyMDE3MDUyOHQwMjQ3MzIzODZ6L2Fkc2stZm9yZ2UtaGVsbG93b3JsZC5ydnQ';
+  const documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bGt3ZWo3eHBiZ3A2M3g0aGwzMzV5Nm0yNm9ha2dnb2YyMDE3MDUyOHQwMjQ3MzIzODZ6L3JhY19iYXNpY19zYW1wbGVfcHJvamVjdC5ydnQ';
 
   const initializerOptions = {
     env: 'AutodeskProduction',
