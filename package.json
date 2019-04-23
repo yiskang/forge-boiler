@@ -1,0 +1,27 @@
+{
+  "name": "forge-boiler",
+  "version": "1.0.0",
+  "description": "This is a boiler project for getting started with the Forge Viewer",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "Eason Kang <eason.kang@autodesk.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "forge-apis": "^0.4.5",
+    "json-server": "^0.14.0",
+    "jstree": "^3.3.5",
+    "lodash": ">=4.17.11",
+    "morgan": ">=1.9.1",
+    "svg.js": "^2.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.1"
+  }
+}

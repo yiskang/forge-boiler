@@ -1,0 +1,211 @@
+{
+  "dataTypes": [
+    {
+      "id": 1,
+      "name": "Unknown",
+      "serial": 0
+    },
+    {
+      "id": 2,
+      "name": "Boolean",
+      "serial": 1
+    },
+    {
+      "id": 3,
+      "name": "Integer",
+      "serial": 2
+    },
+    {
+      "id": 4,
+      "name": "Double",
+      "serial": 3
+    },
+    {
+      "id": 5,
+      "name": "BLOB",
+      "serial": 10
+    },
+    {
+      "id": 6,
+      "name": "DbKey",
+      "serial": 11
+    },
+    {
+      "id": 7,
+      "name": "String",
+      "serial": 20
+    },
+    {
+      "id": 8,
+      "name": "LocalizableString",
+      "serial": 21
+    },
+    {
+      "id": 9,
+      "name": "DateTime",
+      "serial": 22
+    },
+    {
+      "id": 10,
+      "name": "GeoLocation",
+      "serial": 23
+    },
+    {
+      "id": 10,
+      "name": "Position",
+      "serial": 24
+    }
+  ],
+  "props": [
+    {
+      "id": 1,
+      "name": "GUID",
+      "category": "Identity Data",
+      "dataType_id": 7,
+      "dataTypeContext": "",
+      "description": "",
+      "displayName": "GUID",
+      "flags": 0,
+      "value": "c85e5be0-d8d5-4148-836f-b55e711ef373-00068ac9",
+      "dbId": 2591
+    },
+    {
+      "id": 2,
+      "name": "Type",
+      "category": "Identity Data",
+      "dataType_id": 7,
+      "dataTypeContext": "",
+      "description": "",
+      "displayName": "Type",
+      "flags": 0,
+      "value": "Walls",
+      "dbId": 2591
+    },
+    {
+      "id": 3,
+      "name": "GUID",
+      "category": "Identity Data",
+      "dataType_id": 7,
+      "dataTypeContext": "",
+      "description": "",
+      "displayName": "GUID",
+      "flags": 0,
+      "value": "a6aa132d-ccd7-408f-b2f9-ed67350c8c3a-0003b64a",
+      "dbId": 2214
+    },
+    {
+      "id": 4,
+      "name": "Type",
+      "category": "Identity Data",
+      "dataType_id": 7,
+      "dataTypeContext": "",
+      "description": "",
+      "displayName": "Type",
+      "flags": 0,
+      "value": "Roof",
+      "dbId": 2214
+    }
+  ],
+  "markups": [
+    {
+      "id": 1,
+      "serial": "cf7df782c4",
+      "pos3d": [
+        -32.69620893601062,
+        -23.44848006526348,
+        -17.61781597137451
+      ],
+      "diameter": 16
+    },
+    {
+      "serial": "09fa229f84",
+      "pos3d": [
+        -3.8634885543221316,
+        -48.622762592121546,
+        -20.20061650237392
+      ],
+      "diameter": 16,
+      "id": 2
+    },
+    {
+      "serial": "8f74a85c2f",
+      "pos3d": [
+        39.07297716857411,
+        -41.861361325664745,
+        -15.823816072143913
+      ],
+      "diameter": 16,
+      "id": 3
+    },
+    {
+      "serial": "4bcf9b3709",
+      "pos3d": [
+        6.360643381922031,
+        19.20157564737326,
+        -17.61781597137451
+      ],
+      "diameter": 16,
+      "id": 4
+    },
+    {
+      "serial": "96b25bb43e",
+      "pos3d": [
+        75.2598124719954,
+        76.41616640710271,
+        -3.8386013506442964
+      ],
+      "diameter": 16,
+      "id": 5
+    }
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "name": "Upper Unlimited",
+      "elevation": 20000,
+      "units": "mm"
+    },
+    {
+      "id": 2,
+      "name": "Roof Line",
+      "elevation": 6000,
+      "units": "mm"
+    },
+    {
+      "id": 3,
+      "name": "Level 2",
+      "elevation": 3000,
+      "units": "mm"
+    },
+    {
+      "id": 4,
+      "name": "Celling",
+      "elevation": 2700,
+      "units": "mm"
+    },
+    {
+      "id": 5,
+      "name": "Level 1",
+      "elevation": 0,
+      "units": "mm"
+    },
+    {
+      "id": 6,
+      "name": "Level 1 Living Rm.",
+      "elevation": -550,
+      "units": "mm"
+    },
+    {
+      "id": 7,
+      "name": "Foundation",
+      "elevation": -800,
+      "units": "mm"
+    },
+    {
+      "id": 8,
+      "name": "Lower Unlimited",
+      "elevation": -20000,
+      "units": "mm"
+    }
+  ]
+}
