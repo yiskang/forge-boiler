@@ -39,3 +39,47 @@
 #awesomeExtensionPanel .docking-panel-footer {
   z-index: 1;
 }
+
+/* Default location of the panel */
+.adn-docking-panel {
+  top: 10px;
+  left: 10px;
+}
+
+/**
+ * LevelSectionPanel
+ */
+.adn-lvl-section-panel .docking-panel-scroll {
+  width: 370px;
+  height: 112px;
+  min-width: 370px;
+  max-height: 112px;
+}
+
+.adn-lvl-section-panel .docking-panel-scroll table {
+  width: 100%;
+  height: 100%;
+}
+
+.adn-lvl-section-panel table td:first-child {
+  width: 30px;
+  color: #f3f7fb;
+}
+
+.adn-lvl-section-panel table td:last-child {
+  color: #bec8d2;
+}
+
+.adn-lvl-section-panel table tr:last-child {
+  text-align: center;
+}
+
+.adn-lvl-section-panel table tr:last-child button {
+  width: calc(100% - 50px);
+  height: 30px;
+}
+
+.adn-lvl-selector {
+  width: 100%;
+  height: 25px;
+}

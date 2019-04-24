@@ -62,7 +62,7 @@
     }
 
     const config3d = {
-      extensions: ['Autodesk.ADN.Extension.Toolbar'],
+      extensions: ['Autodesk.ADN.LevelSection'],
     };
 
 
